@@ -2,10 +2,10 @@
 
 """Let's duck type an iterable object"""
 
-from typing import List, Tuple, Sequence, Iterable
+from typing import Tuple, Sequence, Iterable
 
 
-def element_length(lst: List[Iterable[Sequence]]) -> Tuple[Sequence]:
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
     """Annotate the function’s parameters
     return values with the appropriate types"""
     return [(i, len(i)) for i in lst]
