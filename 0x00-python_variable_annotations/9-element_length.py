@@ -2,7 +2,7 @@
 
 """Let's duck type an iterable object"""
 
-from typing import Tuple, Sequence, Iterable
+from typing import Tuple, Sequence, Iterable, List
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
